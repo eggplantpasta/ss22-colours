@@ -1,6 +1,8 @@
 # ss22-colours
 Web based paint colour picker for a yacht.
 
+https://eggplantpasta.github.io/ss22-colours/
+
 ## Run locally for development
 
 Opening `docs/index.html` directly with `file://` can trigger browser security errors like:
