@@ -28,3 +28,9 @@ li.text-dark {
 li.text-light {
     color: #f5f5f5;
 }
+
+:root {
+    --pico-accordion-close-summary-color: var(--pico-color-slate-50);
+    --pico-accordion-open-summary-color: var(--pico-color-slate-50);
+    --pico-accordion-active-summary-color: var(--pico-color-slate-50);
+}

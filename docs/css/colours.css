@@ -1,0 +1,30 @@
+
+.color-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal parts */
+  height: 100px; /* Height of the blocks */
+}
+.block {
+  display: grid;
+  place-items: center; /* This centers the text inside each individual block */
+}
+
+.matcha {
+  background-color: #cbd6c5;
+}
+
+.light-admiralty-grey {
+  background-color: #b6d3cc;
+}
+.glacial-green {
+  background-color: #f1fbe9;
+}
+.duck-egg-blue {
+  background-color: #cbd6c5;
+}
+.light-green {
+  background-color: #c0e1c2;
+}
+.turquoise {
+  background-color: #97d5c8;
+}

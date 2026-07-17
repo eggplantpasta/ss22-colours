@@ -6,16 +6,17 @@
 
   <title>Boat Colours</title>
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.slate.min.css"
   >
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
 
 </head>
 
 <body>
-  <div class="centre">
+  <main class="container">
+  <figure class="centre">
     <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="507.53" height="153.044"
       viewBox="0 0 134.284 40.493">
       <path class="topsides" d="m157.692 216.958 8.863-14.155-124.486 2.778-3.241 11.906z"
@@ -26,11 +27,10 @@
         style="fill-opacity:1;stroke:#000;stroke-width:.264583;stroke-opacity:1"
         transform="translate(-32.514 -202.665)" />
     </svg>
-  </div>
-  <h1>Topsides Paint Colours</h1>
-  <h2>
-    Toplac
-  </h2>
+  </figure>
+  <h2>Topsides Paint Colours</h2>
+  <details name="paint">
+    <summary role="button">Toplac</summary>
   <ul class="topsides">
     <li style="background-color: #dbdceb;">
       White
@@ -69,9 +69,9 @@
       Jet Black
     </li>
   </ul>
-  <h2>
-    Toplac Plus
-  </h2>
+  </details>
+  <details name="paint">
+    <summary  role="button">Toplac Plus</summary>
   <ul class="topsides">
     <li style="background-color: #8E8B8A;">
       Atlantic Grey
@@ -122,10 +122,10 @@
       Fire Red
     </li>
   </ul>
-  <h1>Bottom Antifoul Paint Colours</h1>
-  <h2>
-    Trilux 33
-  </h2>
+  </details>
+  <h2>Bottom Antifoul Paint Colours</h2>
+  <details name="paint">
+    <summary  role="button">Trilux 33</summary>
 
   <ul class="bottom">
     <li style="background-color: #FFFAF4; background-image: linear-gradient(#FFFAF4 50%, #FFFDEA 50%);">
@@ -142,6 +142,8 @@
       Blue
     </li>
   </ul>
+  </details>
+  </main>
   <script src="js/scripts.js"></script>
 </body>
 
