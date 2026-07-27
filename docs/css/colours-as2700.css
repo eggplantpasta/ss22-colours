@@ -1,0 +1,229 @@
+:root {
+  /*
+   * Example screen approximations only.
+   * Physical AS 2700 paint colours cannot be represented exactly on
+   * every monitor.
+   */
+
+  /* blue */
+	--as2700-b11: #2b3770; /* b11 rich blue */
+	--as2700-b12: #2c3563; /* b12 royal blue */
+	--as2700-b13: #28304d; /* b13 navy blue */
+	--as2700-b14: #28426b; /* b14 saphhire */
+	--as2700-b15: #144b6f; /* b15 mid blue */
+	--as2700-b21: #2c5098; /* b21 ultramarine */
+	--as2700-b22: #215097; /* b22 homebush blue */
+	--as2700-b23: #174f90; /* b23 bright blue */
+	--as2700-b24: #1c6293; /* b24 harbour blue */
+	--as2700-b25: #5097ac; /* b25 aqua */
+	--as2700-b32: #b7c8db; /* b32 powder blue */
+	--as2700-b33: #e0e6e2; /* b33 mist blue */
+	--as2700-b34: #3499ba; /* b34 paradise blue */
+	--as2700-b35: #cde4e2; /* b35 pale blue */
+	--as2700-b41: #5b94d1; /* b41 bluebell */
+	--as2700-b42: #5e7899; /* b42 purple bluetd> */
+	--as2700-b43: #627c8d; /* b43 grey blue */
+	--as2700-b44: #c0c0c1; /* b44 light grey blue */
+	--as2700-b45: #7db7c7; /* b45 sky blue */
+	--as2700-b51: #3871ac; /* b51 periwinkle */
+	--as2700-b53: #4f6572; /* b53 dark grey blue */
+	--as2700-b55: #3f7c94; /* b55 storm blue */
+	--as2700-b61: #2b3873; /* b61 coral sea */
+	--as2700-b62: #292a34; /* b62 midnight blue */
+	--as2700-b64: #363e45; /* b64 charcoal */
+
+ /* green */
+	--as2700-g11: #253a32; /*g11 bottle green */
+	--as2700-g12: #21432d; /*g12 holly */
+	--as2700-g13: #195f35; /*g13 emerald */
+	--as2700-g14: #33572d; /*g14 moss green */
+	--as2700-g15: #3d492d; /*g15 rainforest green */
+	--as2700-g16: #305442; /*g16 traffic green */
+	--as2700-g17: #006b45; /*g17 mint green */
+	--as2700-g21: #127453; /*g21 jade */
+	--as2700-g22: #78a681; /*g22 serpentine */
+	--as2700-g23: #336634; /*g23 shamrock */
+	--as2700-g24: #477036; /*g24 fern tree */
+	--as2700-g25: #595b2a; /*g25 olive */
+	--as2700-g26: #4e9843; /*g26 apple green */
+	--as2700-g27: #017f4d; /*g27 homebush green */
+	--as2700-g31: #468a65; /*g31 vertigris */
+	--as2700-g32: #afcbb8; /*g32 opaline */
+	--as2700-g33: #7b9954; /*g33 lettuce */
+	--as2700-g34: #757c4c; /*g34 avocado */
+	--as2700-g35: #89922e; /*g35 lime green */
+	--as2700-g36: #95b43b; /*g36 kikuyu */
+	--as2700-g37: #45a56a; /*g37 beanstalk */
+	--as2700-g41: #0d875d; /*g41 lawn green */
+	--as2700-g42: #d5e1d2; /*g42 glacier */
+	--as2700-g43: #c8c8a7; /*g43 surf green */
+	--as2700-g44: #99b179; /*g44 palm green */
+	--as2700-g45: #c7c98d; /*g45 chartreuse */
+	--as2700-g46: #bfc83e; /*g46 citronella */
+	--as2700-g47: #adcca8; /*g47 crystal green */
+	--as2700-g51: #05674f; /*g51 spruce */
+	--as2700-g52: #66755b; /*g52 eucalyptus */
+	--as2700-g53: #929479; /*g53 banksia */
+	--as2700-g54: #7a836d; /*g54 mist green */
+	--as2700-g55: #a7a98c; /*g55 lichen */
+	--as2700-g56: #677249; /*g56 sage green */
+	--as2700-g61: #283533; /*g61 dark green */
+	--as2700-g62: #617061; /*g62 rivergum */
+	--as2700-g63: #333334; /*g63 deep bronze green */
+	--as2700-g64: #5e6153; /*g64 slate */
+	--as2700-g65: #5d5f4e; /*g65 ti-tree */
+	--as2700-g66: #484c3f; /*g66 environment green */
+	--as2700-g67: #2e443a; /*g67 zucchini */
+
+ /* blue-green (teal) */
+	--as2700-t11: #006698; /* t11 tropical blue */
+	--as2700-t12: #006c74; /* t12 diamantia */
+	--as2700-t14: #105154; /* t14 malachite */
+	--as2700-t15: #098587; /* t15 turquoise */
+	--as2700-t22: #358792; /* t22 oriental blue */
+	--as2700-t24: #427f7e; /* t24 blue jade */
+	--as2700-t32: #72b3b1; /* t32 huon green */
+	--as2700-t33: #9eb6b2; /* t33 smoke blue */
+	--as2700-t35: #78aea2; /* t35 green ice */
+	--as2700-t44: #6a8a88; /* t44 blue gum */
+	--as2700-t45: #759e91; /* t45 cootamundra */
+	--as2700-t51: #295668; /* t51 mountain blue */
+	--as2700-t53: #245764; /* t53 peacock blue */
+	--as2700-t63: #183f4e; /* t63 teal */
+
+ /* neutral */
+ 	--as2700-n11: #d8d3c7; /* n11 pearl grey */
+	--as2700-n12: #cccccc; /* n12 pastel grey */
+	--as2700-n14: #ffffff; /* n14 white */
+	--as2700-n15: #a29b93; /* n15 homebush grey */
+	--as2700-n22: #c4c1b9; /* n22 cloud grey */
+  --as2700-n23: #cccccc; /* n23 neutral grey */
+  --as2700-n24: #bdc7c5; /* n24 silver grey */
+  --as2700-n25: #aba498; /* n25 birch grey */
+  --as2700-n32: #8e9282; /* n32 green grey */
+  --as2700-n33: #acadad; /* n33 lightbox grey */
+  --as2700-n35: #a6a7a1; /* n35 light grey */
+  --as2700-n41: #998f78; /* n41 oyster */
+  --as2700-n42: #858f88; /* n42 storm grey */
+  --as2700-n43: #999999; /* n43 pipeline grey */
+  --as2700-n44: #767779; /* n44 bridge grey */
+  --as2700-n45: #928f88; /* n45 koala grey */
+  --as2700-n52: #727a77; /* n52 mid grey */
+  --as2700-n53: #7c8588; /* n53 blue grey */
+  --as2700-n54: #585c63; /* n54 basalt */
+  --as2700-n55: #5e5c58; /* n55 lead grey */
+  --as2700-n61: #2a2a2c; /* n61 black */
+  --as2700-n63: #596064; /* n63 pewter */
+  --as2700-n64: #4b5259; /* n64 dark grey */
+  --as2700-n65: #45474a; /* n65 graphite grey */
+
+ /* purple */
+	--as2700-p11: #7b2b48; /* p11 magenta */
+	--as2700-p12: #85467b; /* p12 purple */
+	--as2700-p13: #5d3a61; /* p13 violet */
+	--as2700-p14: #4c4176; /* p14 blueberry */
+	--as2700-p21: #e3bbbd; /* p21 sunset pink */
+	--as2700-p22: #83597d; /* p22 cyclamen */
+	--as2700-p23: #a69fb1; /* p23 lilac */
+	--as2700-p24: #795f91; /* p24 jacaranda */
+	--as2700-p31: #dbbebc; /* p31 dusty pink */
+	--as2700-p33: #d1bcc9; /* p33 ribbon pink */
+	--as2700-p41: #c55a83; /* p41 erica pink */
+	--as2700-p42: #a06574; /* p42 mulberry */
+	--as2700-p43: #756d91; /* p43 wisteria */
+	--as2700-p52: #6e3d4b; /* p52 plum */
+
+ /* red */
+	--as2700-r11: #ce482a; /* r11 international orange */
+	--as2700-r12: #cd392a; /* r12 scarlet */
+	--as2700-r13: #ba312b; /* r13 signal red */
+	--as2700-r14: #aa2429; /* r14 waratah */
+	--as2700-r15: #9e2429; /* r15 crimson */
+	--as2700-r21: #e96957; /* r21 tangerine */
+	--as2700-r22: #d83a2d; /* r22 homebush red */
+	--as2700-r23: #cc5058; /* r23 lollipop */
+	--as2700-r24: #b4292a; /* r24 strawberry */
+	--as2700-r25: #e8919c; /* r25 rose pink */
+	--as2700-r32: #f2e1d8; /* r32 apple blossom */
+	--as2700-r33: #e8dad4; /* r33 ghost gum */
+	--as2700-r34: #d7c0b6; /* r34 mushroom */
+	--as2700-r35: #cd6d71; /* r35 deep rose */
+	--as2700-r41: #f9d9bb; /* r41 shell pink */
+	--as2700-r42: #d99679; /* r42 salmon pink */
+	--as2700-r43: #d0674f; /* r43 red dust */
+	--as2700-r44: #a18881; /* r44 possum */
+	--as2700-r45: #8f3e5c; /* r45 ruby */
+	--as2700-r51: #e19b8e; /* r51 burnt pink */
+	--as2700-r52: #a04c36; /* r52 terracotta */
+	--as2700-r53: #8d4338; /* r53 red gum */
+	--as2700-r54: #852f31; /* r54 raspberry */
+	--as2700-r55: #67292d; /* r55 claret */
+	--as2700-r62: #77372b; /* r62 venetian red */
+	--as2700-r63: #663334; /* r63 red oxide */
+	--as2700-r64: #542e2b; /* r64 deep indian red */
+	--as2700-r65: #3f2b3c; /* r65 maroon */
+
+ /*yellow-red (orange)*/
+	--as2700-x11: #d38f43; /* x11 butterscotch */
+	--as2700-x12: #dd7e1a; /* x12 pumpkin */
+	--as2700-x13: #ed7f15; /* x13 marigold */
+	--as2700-x14: #e45427; /* x14 mandarin */
+	--as2700-x15: #e36c2b; /* x15 orange */
+	--as2700-x21: #daa45f; /* x21 pale ochre */
+	--as2700-x22: #f6aa51; /* x22 saffron */
+	--as2700-x23: #feb56d; /* x23 apricot */
+	--as2700-x24: #f6894b; /* x24 rockmelon */
+	--as2700-x31: #ebc695; /* x31 raffia */
+	--as2700-x32: #f1debe; /* x32 magnolia */
+	--as2700-x33: #f3e7d4; /* x33 warm white */
+	--as2700-x34: #d5c4ae; /* x34 driftwood */
+	--as2700-x41: #c28a44; /* x41 buff */
+	--as2700-x42: #deba92; /* x42 biscuit */
+	--as2700-x43: #c9aa8c; /* x43 beige */
+	--as2700-x45: #ac826d; /* x45 cinnamon */
+	--as2700-x51: #8f5f32; /* x51 tan */
+	--as2700-x52: #ad7948; /* x52 coffee */
+	--as2700-x53: #925629; /* x53 golden tan */
+	--as2700-x54: #68452c; /* x54 brown */
+	--as2700-x55: #764832; /* x61 nut brown */
+	--as2700-x61: #6e5d52; /* x61 wombat */
+	--as2700-x62: #6e5d52; /* x62 dark earth */
+	--as2700-x63: #443b36; /* x63 ironbark */
+	--as2700-x64: #4a3b31; /* x64 chocolate */
+	--as2700-x65: #4f372d; /* x65 dark brown */
+
+ /* yellow */
+	--as2700-y11: #e7bd11; /* y11 canary */
+	--as2700-y12: #e8af01; /* y12 wattle */
+	--as2700-y13: #fcae01; /* y13 vivid yellow */
+	--as2700-y14: #f5a601; /* y14 golden yellow */
+	--as2700-y15: #ffa709; /* y15 sunflower */
+	--as2700-y16: #df8c19; /* y16 inca gold */
+	--as2700-y21: #f5cf5b; /* y21 primrose */
+	--as2700-y22: #efd25c; /* y22 custard */
+	--as2700-y23: #e0cd41; /* y23 buttercup */
+	--as2700-y24: #e3c882; /* y24 straw */
+	--as2700-y25: #f3c968; /* y25 deep cream */
+	--as2700-y26: #fcc51a; /* y26 homebush gold */
+	--as2700-y31: #e3e3cd; /* y31 lily green */
+	--as2700-y32: #e6df9e; /* y32 flummery */
+	--as2700-y33: #f5f3ce; /* y33 pale primrose */
+	--as2700-y34: #efe3be; /* y34 cream */
+	--as2700-y35: #f1e9d5; /* y35 off white */
+	--as2700-y41: #8e7426; /* y41 olive yellow */
+	--as2700-y42: #c4a32e; /* y42 mustard */
+	--as2700-y43: #d4c9a3; /* y43 parchment */
+	--as2700-y44: #dcc18b; /* y44 sand */
+	--as2700-y45: #e5d0a7; /* y45 manilla */
+	--as2700-y51: #695d3e; /* y51 bronze olive */
+	--as2700-y52: #bea873; /* y52 chamois */
+	--as2700-y53: #d5bf8e; /* y53 sandstone */
+	--as2700-y54: #caae82; /* y54 oatmeal */
+	--as2700-y55: #bc9969; /* y55 deep stone */
+	--as2700-y56: #c9b79e; /* y56 merino */
+	--as2700-y61: #47473b; /* y61 black olive */
+	--as2700-y62: #bca55c; /* y62 sugar cane */
+	--as2700-y63: #826843; /* y63 khaki */
+	--as2700-y65: #a39281; /* y65 mushroom */
+	--as2700-y66: #574e45; /* y66 mudstone */
+}
