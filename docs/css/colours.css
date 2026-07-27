@@ -1,30 +1,24 @@
 
-.color-row {
+.colour-chart {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal parts */
-  height: 100px; /* Height of the blocks */
-}
-.block {
-  display: grid;
-  place-items: center; /* This centers the text inside each individual block */
+
+  /*
+   * Add as many columns as will fit.
+   * Each card is at least 160px wide.
+   */
+  grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr));
+
+  gap: 1rem;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 1rem;
 }
 
-.matcha {
-  background-color: #cbd6c5;
-}
+.colour-swatch {
+  background-color: var(--swatch);
 
-.light-admiralty-grey {
-  background-color: #b6d3cc;
-}
-.glacial-green {
-  background-color: #f1fbe9;
-}
-.duck-egg-blue {
-  background-color: #cbd6c5;
-}
-.light-green {
-  background-color: #c0e1c2;
-}
-.turquoise {
-  background-color: #97d5c8;
+  /*
+   * Maintains the same shape at every card width.
+   */
+  aspect-ratio: 4 / 3;
 }
