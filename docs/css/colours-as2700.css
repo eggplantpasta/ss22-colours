@@ -97,25 +97,25 @@
 	--as2700-n14: #ffffff; /* n14 white */
 	--as2700-n15: #a29b93; /* n15 homebush grey */
 	--as2700-n22: #c4c1b9; /* n22 cloud grey */
-  --as2700-n23: #cccccc; /* n23 neutral grey */
-  --as2700-n24: #bdc7c5; /* n24 silver grey */
-  --as2700-n25: #aba498; /* n25 birch grey */
-  --as2700-n32: #8e9282; /* n32 green grey */
-  --as2700-n33: #acadad; /* n33 lightbox grey */
-  --as2700-n35: #a6a7a1; /* n35 light grey */
-  --as2700-n41: #998f78; /* n41 oyster */
-  --as2700-n42: #858f88; /* n42 storm grey */
-  --as2700-n43: #999999; /* n43 pipeline grey */
-  --as2700-n44: #767779; /* n44 bridge grey */
-  --as2700-n45: #928f88; /* n45 koala grey */
-  --as2700-n52: #727a77; /* n52 mid grey */
-  --as2700-n53: #7c8588; /* n53 blue grey */
-  --as2700-n54: #585c63; /* n54 basalt */
-  --as2700-n55: #5e5c58; /* n55 lead grey */
-  --as2700-n61: #2a2a2c; /* n61 black */
-  --as2700-n63: #596064; /* n63 pewter */
-  --as2700-n64: #4b5259; /* n64 dark grey */
-  --as2700-n65: #45474a; /* n65 graphite grey */
+	--as2700-n23: #cccccc; /* n23 neutral grey */
+	--as2700-n24: #bdc7c5; /* n24 silver grey */
+	--as2700-n25: #aba498; /* n25 birch grey */
+	--as2700-n32: #8e9282; /* n32 green grey */
+	--as2700-n33: #acadad; /* n33 lightbox grey */
+	--as2700-n35: #a6a7a1; /* n35 light grey */
+	--as2700-n41: #998f78; /* n41 oyster */
+	--as2700-n42: #858f88; /* n42 storm grey */
+	--as2700-n43: #999999; /* n43 pipeline grey */
+	--as2700-n44: #767779; /* n44 bridge grey */
+	--as2700-n45: #928f88; /* n45 koala grey */
+	--as2700-n52: #727a77; /* n52 mid grey */
+	--as2700-n53: #7c8588; /* n53 blue grey */
+	--as2700-n54: #585c63; /* n54 basalt */
+	--as2700-n55: #5e5c58; /* n55 lead grey */
+	--as2700-n61: #2a2a2c; /* n61 black */
+	--as2700-n63: #596064; /* n63 pewter */
+	--as2700-n64: #4b5259; /* n64 dark grey */
+	--as2700-n65: #45474a; /* n65 graphite grey */
 
  /* purple */
 	--as2700-p11: #7b2b48; /* p11 magenta */
