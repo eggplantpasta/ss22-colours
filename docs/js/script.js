@@ -1,43 +1,47 @@
 function changeSVGColor(event) {
-    var clickedElement = event.currentTarget;
-    var className = clickedElement.parentNode.className;
-    var bgColor = window.getComputedStyle(clickedElement).backgroundColor;
-    var svgElement = document.querySelector(`path.${className}`);
-    svgElement.style.fill = bgColor;
-  }
+  var clickedElement = event.currentTarget;
+  var className = clickedElement.parentNode.className;
+  var bgColor = window.getComputedStyle(clickedElement).backgroundColor;
+  var svgElement = document.querySelector(`path.${className}`);
+  svgElement.style.fill = bgColor;
+}
 
-  // Get all the unordered list elements on the page
+// Get all the unordered list elements on the page
 var ulElements = document.querySelectorAll('ul');
 
 // Iterate over each unordered list element
-ulElements.forEach(function(ulElement) {
+ulElements.forEach(function (ulElement) {
   // Get all the list item elements within the unordered list
   var liElements = ulElement.querySelectorAll('li');
 
   // Iterate over each list item element and add the click event listener
-  liElements.forEach(function(liElement) {
+  liElements.forEach(function (liElement) {
     liElement.addEventListener('click', changeSVGColor);
   });
 });
 
 function updateThemeButtonLabel() {
-  const button = document.querySelector('.toggle-button');
+  const button = document.querySelector(".toggle-button");
   if (!button) return;
-
   const html = document.documentElement;
-  const currentTheme = html.getAttribute('data-theme');
+  const currentTheme = html.getAttribute("data-theme");
+
+  button.classList.remove("theme-light", "theme-dark", "theme-system");
 
   switch (currentTheme) {
-    case 'light':
-      button.textContent = 'Light';
+    case "light":
+      button.classList.add("theme-light");
+      button.setAttribute("aria-label", "Light theme");
       break;
 
-    case 'dark':
-      button.textContent = 'Dark';
+    case "dark":
+      button.classList.add("theme-dark");
+      button.setAttribute("aria-label", "Dark theme");
       break;
 
     default:
-      button.textContent = 'System';
+      button.classList.add("theme-system");
+      button.setAttribute("aria-label", "System theme");
       break;
   }
 }
@@ -63,4 +67,10 @@ function toggleTheme() {
   updateThemeButtonLabel();
 }
 
-document.addEventListener('DOMContentLoaded', updateThemeButtonLabel);
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.querySelector(".toggle-button");
+  if (button) {
+    button.addEventListener("click", toggleTheme);
+    updateThemeButtonLabel();
+  }
+});

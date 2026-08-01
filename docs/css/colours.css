@@ -22,3 +22,35 @@
    */
   aspect-ratio: 4 / 3;
 }
+
+.toggle-button::before {
+    content: "";
+    width: 1.25rem;
+    height: 1.25rem;
+    background: currentColor;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+}
+
+/* Sun */
+.theme-light::before {
+    mask-image: url("/icons/sun.svg");
+    -webkit-mask-image: url("/icons/sun.svg");
+}
+
+/* Moon */
+.theme-dark::before {
+    mask-image: url("/icons/moon.svg");
+    -webkit-mask-image: url("/icons/moon.svg");
+}
+
+/* Monitor */
+.theme-system::before {
+    mask-image: url("/icons/monitor.svg");
+    -webkit-mask-image: url("/icons/monitor.svg");
+}
