@@ -28,7 +28,7 @@
 }
 
 .colour-swatch {
-  background-color: var(--swatch);
+  background-color: var(--swatch, transparent);
   cursor: pointer;
 
   /*

@@ -68,15 +68,28 @@ function toggleTheme() {
 }
 
 function getSwatchData(swatch) {
+  const swatchVar = swatch.getAttribute("data-swatch") || swatch.style.getPropertyValue("--swatch").trim();
+
   return {
-    swatchVar: swatch.style.getPropertyValue("--swatch").trim(),
+    swatchVar,
     tooltip: swatch.getAttribute("data-tooltip") || ""
   };
 }
 
 function applySwatchData(targetSwatch, swatchData) {
   targetSwatch.style.setProperty("--swatch", swatchData.swatchVar);
+  targetSwatch.setAttribute("data-swatch", swatchData.swatchVar);
   targetSwatch.setAttribute("data-tooltip", swatchData.tooltip);
+}
+
+function initializeSwatchValues() {
+  const swatches = document.querySelectorAll(".colour-swatch[data-swatch]");
+
+  swatches.forEach((swatch) => {
+    const swatchVar = swatch.getAttribute("data-swatch");
+    if (!swatchVar) return;
+    swatch.style.setProperty("--swatch", swatchVar);
+  });
 }
 
 function copySwatchDataToClipboard(swatchData) {
@@ -136,6 +149,8 @@ function initializeSchemeBuilder() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  initializeSwatchValues();
+
   const button = document.querySelector(".toggle-button");
   if (button) {
     button.addEventListener("click", toggleTheme);
