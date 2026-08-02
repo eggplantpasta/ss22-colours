@@ -14,13 +14,38 @@
   padding: 1rem;
 }
 
+.colour-scheme {
+  display: grid;
+
+  /*
+   * Add as many columns as will fit.
+   * Each card is at least 160px wide.
+   */
+  grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr));
+
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
 .colour-swatch {
   background-color: var(--swatch);
+  cursor: pointer;
 
   /*
    * Maintains the same shape at every card width.
    */
   aspect-ratio: 4 / 3;
+}
+
+.colour-chart .colour-swatch.is-selected-source {
+  outline: 0.2rem solid currentColor;
+  outline-offset: 0.15rem;
+}
+
+.scheme-status {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
 .page-header {
