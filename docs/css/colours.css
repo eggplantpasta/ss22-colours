@@ -21,7 +21,7 @@
    * Add as many columns as will fit.
    * Each card is at least 160px wide.
    */
-  grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(80px, 100%), 1fr));
 
   max-width: 1200px;
   margin-inline: auto;
@@ -35,6 +35,10 @@
    * Maintains the same shape at every card width.
    */
   aspect-ratio: 4 / 3;
+}
+
+.colour-scheme .colour-swatch {
+  aspect-ratio: 1 / 2;
 }
 
 .colour-chart .colour-swatch.is-selected-source {

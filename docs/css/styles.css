@@ -34,3 +34,18 @@ li.text-light {
     --pico-accordion-open-summary-color: var(--pico-color-slate-50);
     --pico-accordion-active-summary-color: var(--pico-color-slate-50);
 }
+
+.layout {
+    height: 100vh;
+}
+
+.layout > aside {
+    border-right: 1px solid var(--pico-muted-border-color);
+    padding: var(--pico-spacing);
+    overflow-y: auto;
+}
+
+.layout > main {
+    padding: var(--pico-spacing);
+    overflow-y: auto;
+}
