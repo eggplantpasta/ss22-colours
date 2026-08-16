@@ -25,6 +25,8 @@
 
   max-width: 1200px;
   margin-inline: auto;
+  overflow: hidden;
+  border-radius: 1rem;
 }
 
 .colour-swatch {
@@ -39,6 +41,16 @@
 
 .colour-scheme .colour-swatch {
   aspect-ratio: 1 / 2;
+}
+
+.colour-scheme .colour-swatch:first-child {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.colour-scheme .colour-swatch:last-child {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .colour-chart .colour-swatch.is-selected-source {
