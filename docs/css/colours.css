@@ -30,6 +30,7 @@
 }
 
 .colour-swatch {
+  position: relative;
   background-color: var(--swatch, transparent);
   cursor: pointer;
 
@@ -51,6 +52,22 @@
 .colour-scheme .colour-swatch:last-child {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
+}
+
+.swatch-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fff;
+  opacity: 0.45;
+  white-space: nowrap;
+  transform: translate(-50%, -50%) rotate(90deg);
+
+  /* keeps the label visible but subtle regardless of the swatch colour */
+  mix-blend-mode: difference;
 }
 
 .colour-chart .colour-swatch.is-selected-source {
