@@ -129,6 +129,10 @@
   mask-image: url("../icons/monitor.svg");
 }
 
+.hull-image {
+  position: relative;
+}
+
 .hull-paint {
   position: absolute;
   inset: 0;

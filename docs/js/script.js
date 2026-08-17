@@ -80,6 +80,10 @@ function applySwatchData(targetSwatch, swatchData) {
   targetSwatch.style.setProperty("--swatch", swatchData.swatchVar);
   targetSwatch.setAttribute("data-swatch", swatchData.swatchVar);
   targetSwatch.setAttribute("data-tooltip", swatchData.tooltip);
+
+  if (targetSwatch.dataset.role === "hull") {
+    document.documentElement.style.setProperty("--hull-colour", swatchData.swatchVar);
+  }
 }
 
 function initializeSwatchValues() {
@@ -89,6 +93,10 @@ function initializeSwatchValues() {
     const swatchVar = swatch.getAttribute("data-swatch");
     if (!swatchVar) return;
     swatch.style.setProperty("--swatch", swatchVar);
+
+    if (swatch.dataset.role === "hull") {
+      document.documentElement.style.setProperty("--hull-colour", swatchVar);
+    }
   });
 }
 
