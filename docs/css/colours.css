@@ -128,3 +128,20 @@
   -webkit-mask-image: url("../icons/monitor.svg");
   mask-image: url("../icons/monitor.svg");
 }
+
+.callout {
+  border-left: 0.25rem solid var(--pico-primary);
+  padding: var(--pico-spacing);
+  background-color: var(--pico-card-background-color);
+
+  /* Make space on the left for the icon */
+  padding-left: calc(var(--pico-spacing) * 3);
+  
+  /* Point to external SVG file */
+  background-image: url("../icons/info.svg");
+  background-repeat: no-repeat;
+  
+  /* Position the icon relative to the padded box */
+  background-position: var(--pico-spacing) calc(var(--pico-spacing) + 0.15rem);
+  background-size: 1.5rem 1.5rem;
+}
