@@ -129,6 +129,21 @@
   mask-image: url("../icons/monitor.svg");
 }
 
+.hull-paint {
+  position: absolute;
+  inset: 0;
+  background: var(--hull-colour);
+}
+
+.hull-mask {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
 .callout {
   border-left: 0.25rem solid var(--pico-primary);
   padding: var(--pico-spacing);
