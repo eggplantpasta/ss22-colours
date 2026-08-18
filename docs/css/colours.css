@@ -94,6 +94,10 @@
 
 .toggle-button {
   margin-left: auto;
+  display: grid;
+  place-items: center;
+  padding: var(--pico-form-element-spacing-vertical);
+  aspect-ratio: 1;
 }
 
 .toggle-button::before {
@@ -101,6 +105,7 @@
   display: inline-block;
   width: 1.25rem;
   height: 1.25rem;
+  margin: 0;
   background: currentColor;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
